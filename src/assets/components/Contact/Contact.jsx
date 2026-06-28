@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Contact.module.css'
-import { FaPhone, FaEnvelope } from 'react-icons/fa6'
+import { FaPhone, FaEnvelope } from 'react-icons/fa'
 
 function Contact() {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './Services.module.css'
-import { FaCode, FaDesktop, FaPaintBrush } from 'react-icons/fa6'
+import { FaCode, FaDesktop, FaPaintBrush } from 'react-icons/fa'
 
 function Services() {
   return (

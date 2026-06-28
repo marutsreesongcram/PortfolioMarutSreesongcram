@@ -1,6 +1,6 @@
 import React, {use, useState} from 'react'
 import styles from './Navbar.module.css' 
-import {FaBars} from "react-icons/fa6"
+import {FaBars} from "react-icons/fa"
 
 function Navbar() {
 
