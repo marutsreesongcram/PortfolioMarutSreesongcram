@@ -9,11 +9,11 @@ function Number() {
         <div className={styles.number_items}>
             <h3>
                 <VisibilitySensor partialVisibility offset={{bottom: 200}}>
-                    {({isVisible})} = (
+                    {({isVisible}) => (
                         <div>
                             {isVisible ? <CountUp start={0} end={10} duration={5} /> :null}+
                         </div>
-                    )
+                    )}
                 </VisibilitySensor>
             </h3>
             <p>Project Delivered</p>
@@ -22,11 +22,11 @@ function Number() {
          <div className={styles.number_items}>
             <h3>
                 <VisibilitySensor partialVisibility offset={{bottom: 200}}>
-                    {({isVisible})} = (
+                    {({isVisible}) => (
                         <div>
                             {isVisible ? <CountUp start={0} end={5} duration={5} /> :null}+
                         </div>
-                    )
+                    )}
                 </VisibilitySensor>
             </h3>
             <p>Companies Helped</p>
@@ -35,11 +35,11 @@ function Number() {
          <div className={styles.number_items}>
             <h3>
                 <VisibilitySensor partialVisibility offset={{bottom: 200}}>
-                    {({isVisible})} = (
+                    {({isVisible}) => (
                         <div>
                             {isVisible ? <CountUp start={0} end={1} duration={5} /> :null}+
                         </div>
-                    )
+                    )}
                 </VisibilitySensor>
             </h3>
             <p>Years of experience</p>
@@ -48,11 +48,11 @@ function Number() {
          <div className={styles.number_items}>
             <h3>
                 <VisibilitySensor partialVisibility offset={{bottom: 200}}>
-                    {({isVisible})} = (
+                    {({isVisible}) => (
                         <div>
                             {isVisible ? <CountUp start={0} end={20} duration={5} /> :null}+
                         </div>
-                    )
+                    )}
                 </VisibilitySensor>
             </h3>
             <p>Happy Clients</p>
