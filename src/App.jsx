@@ -1,9 +1,6 @@
-import { useState } from 'react'
-import reactLogo from './react.svg'
-import viteLogo from './vite.svg'
-import './App.css'
 import AnimatedCursor from 'react-animated-cursor'
 
+// แก้ไขพาธเอา assets/ ออก เพื่อให้ชี้ไปที่โฟลเดอร์ components ตรง ๆ
 import Navbar from './components/Navbar/Navbar'
 import Hero from './components/Hero/Hero'
 import Skills from './components/Skills/Skills'
@@ -15,34 +12,35 @@ import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <AnimatedCursor
-      innerSize={8}
-      outerSize={8}
-      color='0, 65, 125'
-      outerAlpha={0.2}
-      innerScale={1.5}
-      outerStyle={{
-        border: "3px solid #fff"
-      }}
-      outerScale={5}
-      clickables={[
-        'a',
-        'input[type="text"]',
-        'input[type="email"]',
-        'input[type="number"]',
-        'input[type="submit"]',
-        'input[type="image"]',
-        'label[for]',
-        'select',
-        'textarea',
-        'button',
-        '.link'
-      ]}
-    />
+      {/* 1. ตัวเปิดแอนิเมชันลูกศรเมาส์ */}
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={8}
+        color='0, 65, 125'
+        outerAlpha={0.2}
+        innerScale={1.5}
+        outerStyle={{
+          border: "3px solid #fff"
+        }}
+        outerScale={5}
+        clickables={[
+          'a',
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          'label[for]',
+          'select',
+          'textarea',
+          'button',
+          '.link'
+        ]}
+      />
+      
+      {/* 2. ส่วนประกอบหน้าเว็บ Portfolio ของคุณ */}
       <Navbar />
       <Hero />
       <Skills />
