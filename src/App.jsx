@@ -1,5 +1,4 @@
 import './App.css'
-import { Cursor } from 'cursor-effects'
 import Navbar from './assets/components/Navbar/Navbar'
 import Hero from './assets/components/Hero/Hero'
 import Skills from './assets/components/Skills/Skills'
@@ -13,7 +12,6 @@ import Footer from './assets/components/Footer/Footer'
 function App() {
   return (
     <>
-      <Cursor />
       <Navbar />
       <Hero />
       <Skills />

@@ -1,13 +1,13 @@
-import React, {use, useState} from 'react'
+import React, { useState } from 'react'
 import styles from './Navbar.module.css' 
-import {FaBars} from "react-icons/fa"
+import { FaBars } from "react-icons/fa6"
 
 function Navbar() {
 
-  const [isToggled, setToggls] = useState(false);
+  const [isToggled, setToggle] = useState(false);
 
   function handleToggle() {
-    setToggle(!isToggled) // false + false = true
+    setToggle(!isToggled)
   }
 
   return (
