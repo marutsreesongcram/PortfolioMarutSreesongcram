@@ -1,46 +1,19 @@
-import AnimatedCursor from 'react-animated-cursor'
-
-// แก้ไขพาธเอา assets/ ออก เพื่อให้ชี้ไปที่โฟลเดอร์ components ตรง ๆ
-import Navbar from './components/Navbar/Navbar'
-import Hero from './components/Hero/Hero'
-import Skills from './components/Skills/Skills'
-import Services from './components/Services/Services'
-import Portfolio from './components/Portfolio/Portfolio'
-import Number from './components/Number/Number'
-import Testimonials from './components/Testimonials/Testimonials'
-import Contact from './components/Contact/Contact'
-import Footer from './components/Footer/Footer'
+import './App.css'
+import { Cursor } from 'cursor-effects'
+import Navbar from './assets/components/Navbar/Navbar'
+import Hero from './assets/components/Hero/Hero'
+import Skills from './assets/components/Skills/Skills'
+import Services from './assets/components/Services/Services'
+import Portfolio from './assets/components/Portfolio/Portfolio'
+import Number from './assets/components/Number/Number'
+import Testimonials from './assets/components/Testimonials/Testimonials'
+import Contact from './assets/components/Contact/Contact'
+import Footer from './assets/components/Footer/Footer'
 
 function App() {
   return (
     <>
-      {/* 1. ตัวเปิดแอนิเมชันลูกศรเมาส์ */}
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={8}
-        color='0, 65, 125'
-        outerAlpha={0.2}
-        innerScale={1.5}
-        outerStyle={{
-          border: "3px solid #fff"
-        }}
-        outerScale={5}
-        clickables={[
-          'a',
-          'input[type="text"]',
-          'input[type="email"]',
-          'input[type="number"]',
-          'input[type="submit"]',
-          'input[type="image"]',
-          'label[for]',
-          'select',
-          'textarea',
-          'button',
-          '.link'
-        ]}
-      />
-      
-      {/* 2. ส่วนประกอบหน้าเว็บ Portfolio ของคุณ */}
+      <Cursor />
       <Navbar />
       <Hero />
       <Skills />
