@@ -6,7 +6,7 @@ import AnimatedCursor from 'react-animated-cursor'
 
 import Navbar from './assets/components/Navbar/Navbar'
 import Hero from './assets/components/Hero/Hero'
-import skills from './assets/components/Skills/Skills'
+import Skills from './assets/components/Skills/Skills'
 import Services from './assets/components/Services/Services'
 import Portfolio from './assets/components/Portfolio/Portfolio'
 import Number from './assets/components/Number/Number'
